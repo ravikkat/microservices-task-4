@@ -17,6 +17,7 @@
                     <th scope="col">name</th>
                     <th scope="col">username</th>
                     <th scope="col">email</th>
+                    <th scope="col">WEb site</th>
                 </tr>
             </thead>
             <tbody id="todos">
@@ -78,7 +79,9 @@
                 let textNode4 = document.createTextNode(item.email);
                 td4.appendChild(textNode4);
 
-
+                let td5 = tr.insertCell(4);
+                let textNode5 = document.createTextNode(item.website);
+                td5.appendChild(textNode5);
               
             });
 
